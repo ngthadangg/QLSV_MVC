@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sinh viên</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:  100vh;
+            margin: 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="../Controller/C_Student.php?action=add" method="post" >
+
+        <h1>Nhập thông tin nhân viên cần thêm</h1>
+
+        <table>
+            <tr class="input-box">
+                <td><label for="ID">ID: </label></td>
+                <td><input type="text" name="ID" value="" placeholder="ID" ><br></td>
+            </tr>
+
+            <tr class="input-box">
+                <td><label for="Name">Name: </label></td>
+                <td><input type="text" name="Name" value="" placeholder="Name"><br></td>
+            </tr>
+
+            <tr class="input-box">
+                <td><label for="Age">Age: </label></td>
+                <td><input type="text" name="Age" value="" placeholder="Age"><br></td>
+            </tr>
+                       
+            <tr class="input-box">
+                <td><label for="University">University:  </label></td>
+                <td><input type="text" name="University" value="" placeholder="University" ></textarea></td>
+            </tr >
+
+        </table>
+        <br>
+        <div class="button-submit">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+        <p><a href="../index.php">Home Page</a></p>
+    </form>
+    
+</body>
+</html>
