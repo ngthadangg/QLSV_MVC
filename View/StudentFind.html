@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim kiếm sinh viên</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn_action{
+            display : flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #OK{
+            color : blue;
+            font-style : bold;
+        }
+        #RESET{
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="../Controller/C_Student.php?action=search" id = "form-login" method="post">
+        <h1>Tìm kiếm thông tin nhân viên </h1>
+        <table>
+            <tr class="input-box">
+                <td><label >Tìm kiếm theo : </label></td>
+                <td> 
+                    <input type="radio" name ="btn_group" value = "id" placeholder = "id"> <label for="id" >id</label> 
+                    <input type="radio" name ="btn_group" value = "name" placeholder = "name"> <label for="name">Name </label> 
+                    <input type="radio" name ="btn_group" value = "age" placeholder = "age"> <label for="age">Age </label> 
+                    <input type="radio" name ="btn_group" value = "age" placeholder = "university"> <label for="university">University </label> 
+                </td> 
+            </tr> 
+            <tr class="input-box"> 
+                <td><label for="txt_find">Nhập từ khoá tìm kiếm: </label></td> 
+                <td><input type="text" name="txt_find" value="" placeholder = "text here"><br></td> 
+            </tr> 
+        </table> 
+        <div class = "btn_action"> 
+            <button type = "submit" id = "OK" >OK</button> 
+            <button type = "reset" id = "RESET" >RESET</button> 
+        </div> 
+        <br>
+        <br>
+    </form> 
+</body>
+</html>
